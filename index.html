@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVO Academy JS Starter with Vite</title>
+  </head>
+
+  <body>
+    <div id="home-page">
+      <div class="checkout-card-component">
+        <div class="checkout-card-component__title-container">
+          <p class="checkout-card-component__title">Order summary</p>
+          <p class="checkout-card-component__subtitle">
+            Check if your order matches
+          </p>
+        </div>
+        <div class="checkout-card-component__items-container">
+          <div class="order-item">
+            <div class="order-item__image-container">
+              <img src="/images/netflix-logo.jpg" class="order-item__image" />
+            </div>
+            <div class="order-item__details-container">
+              <span class="order-item__name">Individual</span>
+              <span class="order-item__detail">1 account</span>
+            </div>
+            <span class="order-item__price-container price">
+              $10.00
+              <span>/month</span>
+            </span>
+          </div>
+        </div>
+        <div class="checkout-card-component__summary-container">
+          <div class="checkout-card-component__product-summary">
+            <span>Product summary:</span>
+            <span class="checkout-card-component__product-summary-price price"
+              >$10.00 <span>/month</span></span
+            >
+          </div>
+          <div class="checkout-card-component__total-summary">
+            <span>Total:</span>
+            <span class="checkout-card-component__total-summary-price price"
+              >$10.00 <span>/month</span></span
+            >
+          </div>
+        </div>
+
+        <div class="checkout-card-component__buttons-container">
+          <button class="button button--primary">Confirm and pay</button>
+          <button class="button button--secondary">Cancel order</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/global-scripts/main.js"></script>
+    <script type="module" src="/src/pages/home-page/home-page.js"></script>
+  </body>
+</html>
