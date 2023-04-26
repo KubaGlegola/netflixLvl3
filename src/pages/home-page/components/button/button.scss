@@ -1,6 +1,7 @@
 .button {
   border: 0;
   border-radius: 60px;
+  height: 56px;
   padding: 20px 0 19px;
   font-size: 16px;
   line-height: 1em;
@@ -9,6 +10,19 @@
   text-align: center;
   cursor: pointer;
   transition: all ease-in-out 0.3s;
+
+  &:disabled {
+    opacity: 0.5;
+
+    &:hover {
+      cursor: not-allowed;
+    }
+  }
+
+  & &__loader {
+    height: 100%;
+    display: none;
+  }
 
   &--primary {
     background: var(--color-red-500);
@@ -21,6 +35,24 @@
 
     &:active {
       background: var(--color-red-900);
+    }
+
+    &[data-loading="1"] {
+      &:hover {
+        cursor: not-allowed;
+      }
+
+      .button__text {
+        display: none;
+      }
+
+      .button__loader {
+        display: block;
+        img {
+          height: 100%;
+          object-fit: contain;
+        }
+      }
     }
   }
 

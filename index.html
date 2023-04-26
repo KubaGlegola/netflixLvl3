@@ -47,8 +47,15 @@
         </div>
 
         <div class="checkout-card-component__buttons-container">
-          <button class="button button--primary">Confirm and pay</button>
-          <button class="button button--secondary">Cancel order</button>
+          <button class="button button--primary" data-loading="0">
+            <div class="button__text">Confirm and pay</div>
+            <div class="button__loader">
+              <img src="/assets/icons/animated-loader.svg" alt="Loading…" />
+            </div>
+          </button>
+          <button class="button button--secondary">
+            <div class="button__text">Cancel order</div>
+          </button>
         </div>
       </div>
     </div>

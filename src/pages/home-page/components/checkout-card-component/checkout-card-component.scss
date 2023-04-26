@@ -1,7 +1,8 @@
 .checkout-card-component {
   display: flex;
   flex-direction: column;
-  background: var(--color-white-100);
+  background: var(--surface-color);
+  color: var(--on-surface-color);
   width: 100%;
   max-width: 375px;
   min-height: 100vh;
@@ -75,7 +76,7 @@
     gap: 12px;
   }
 
-  @media (min-width: 375px) {
+  @media (min-width: 530px) {
     max-width: 520px;
     min-height: unset;
     padding: 40px;

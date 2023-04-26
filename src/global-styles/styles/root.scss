@@ -6,9 +6,9 @@
   --primary-color: var(--color-red-500);
   --primary-color-dark: var(--color-red-700);
   --primary-color-light: var(--color-red-300);
-}
-
-:root {
+  --background-color: var(--color-white-500);
+  --surface-color: var(--color-white-100);
+  --on-surface-color: var(--color-gray-900);
   --color-red-100: #f1c1be;
   --color-red-200: #e89793;
   --color-red-300: #df6d67;
